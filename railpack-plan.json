@@ -1,11 +1,14 @@
 {
   "build": {
     "packages": {
-      "php": {
-        "version": "8.4.14",
-        "extensions": ["gd", "zip", "bcmath"]
-      },
+      "php": "8.4.14",
       "node": "22.21.1"
+    },
+    "steps": {
+      "extensions": [
+        "install-php-extensions gd zip bcmath"
+      ],
+      "composer": "composer install --optimize-autoloader --no-scripts --no-interaction --ignore-platform-req=ext-zip --ignore-platform-req=ext-gd --ignore-platform-req=ext-bcmath"
     }
   }
 }
