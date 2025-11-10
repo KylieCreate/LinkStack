@@ -1,0 +1,7 @@
+{
+  "build": {
+    "install": [
+      "install-php-extensions gd zip bcmath"
+    ]
+  }
+}
