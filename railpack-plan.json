@@ -1,0 +1,13 @@
+{
+  "build": {
+    "packages": {
+      "php": "8.4.14",
+      "node": "22.21.1"
+    },
+    "steps": {
+      "extensions": [
+        "install-php-extensions gd zip bcmath"
+      ]
+    }
+  }
+}
